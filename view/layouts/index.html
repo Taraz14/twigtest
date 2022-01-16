@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="icon" type="image/x-icon" href="{{ favicon }}favicon.ico">
+		<link rel="stylesheet" href="{{base_url}}vendor/bootstrap/css/bootstrap.css">
+		<link rel="stylesheet" href="{{base_url}}vendor/fontawesome-free-6.0.0/css/all.css">
+		<link rel="stylesheet" href="{{base_url}}owncss/style.css">
+		<title>Welcome</title>
+		<style>
+			.payment-list {
+				list-style: none;
+				margin-left: -31px;
+			}
+
+			li.payment {
+				display: inline;
+
+			}
+
+			.soc {
+				padding-top: 10px;
+				padding-right: 10px;
+				width: 31%;
+			}
+
+			.svg {
+				list-style: none;
+				margin: 10px 0;
+				padding-left: 25px;
+				vertical-align: middle;
+				font-family: "Montserrat-light";
+				background: url("data:image/svg+xml;charset=UTF-8, <svg xmlns='http://www.w3.org/2000/svg' class='icon icon-tabler icon-tabler-circle-check' width='24' height='24' viewBox='0 0 24 24' stroke-width='2' stroke='white' fill='none' stroke-linecap='round' stroke-linejoin='round'><path stroke='none' d='M0 0h24v24H0z' fill='none'></path><circle fill='limegreen' cx='12' cy='12' r='9'></circle><path d='M9 12l2 2l4 -4'></path></svg>") 0 0 / contain no-repeat;
+			}
+
+
+		</style>
+	</head>
+	<body>
+
+		{% include ('layouts/topNavbar.html') %}
+		{% include ('layouts/navbar.html') %}
+		{% block content %}{% endblock content %}
+
+
+	    <script src="{{base_url}}vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+        <script src="{{base_url}}vendor/fontawesome-free-6.0.0/js/all.js"></script>
+    </body>
+</html>

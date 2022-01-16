@@ -1,0 +1,21 @@
+{
+    "bayi" : {
+        "last-price" : "19.900",
+        "new-price" : "14.900"
+    },
+
+    "pelajar" : {
+        "last-price" : "46.900",
+        "new-price" : "23.500"
+    },
+
+    "personal" : {
+        "last-price" : "58.900",
+        "new-price" : "38.900"
+    },
+
+    "bisnis" : {
+        "last-price" : "109.900",
+        "new-price" : "65.900"
+    }
+}
