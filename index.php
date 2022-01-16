@@ -3,7 +3,9 @@
 require_once('vendor/autoload.php');
 
 $loader = new \Twig\Loader\FilesystemLoader('view');
-$twig = new \Twig\Environment($loader);
+$twig = new \Twig\Environment($loader, [
+    'cache' => 'cache',
+]);
 
 $price = file_get_contents('http://localhost/docker/price.json');
 $price_decode = json_decode($price, TRUE);
